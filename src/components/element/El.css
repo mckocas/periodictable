@@ -1,0 +1,16 @@
+.Tilt{
+    background: #162238;
+    color: white;
+    box-sizing: border-box;
+    text-align:center;
+    font-size:12px;
+    margin: 5px;
+}
+.Tilt-inner{
+    padding:1px;
+}
+
+h3{
+    margin:0 auto;
+    font-size:22px;
+}

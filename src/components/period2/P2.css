@@ -1,0 +1,13 @@
+.period2{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    width: 1100px;
+    margin: 0 auto;
+}
+.firstGroup{
+    display:flex;
+}
+.secondGroup{
+    display:flex;
+}
