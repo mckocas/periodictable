@@ -333,6 +333,116 @@ const Elements = {
             symbol: 'Xe',
             mass: 131.292
         }
+    ],
+    period6: [
+        {
+            name: 'Caesium',
+            number: 55,
+            symbol: 'Cs',
+            mass: 132.905
+        },
+        {
+            name: 'Barium',
+            number: 56,
+            symbol: 'Ba',
+            mass: 137.327
+        },
+        {
+            name: 'Lanthanum',
+            number: 57,
+            symbol: 'La',
+            mass: 138.905
+        },
+        {
+            name: 'Hafnium',
+            number: 72,
+            symbol: 'Hf',
+            mass: 178.49
+        },
+        {
+            name: 'Tantalum',
+            number: 73,
+            symbol: 'Ta',
+            mass: 180.948
+        },
+        {
+            name: 'Tungsten',
+            number: 74,
+            symbol: 'W',
+            mass: 183.84
+        },
+        {
+            name: 'Rhenium',
+            number: 75,
+            symbol: 'Re',
+            mass: 186.207
+        },
+        {
+            name: 'Osmium',
+            number: 76,
+            symbol: 'Os',
+            mass: '190.23'
+        },
+        {
+            name: 'Iridium',
+            number: 77,
+            symbol: 'Ir',
+            mass: 192.217
+        },
+        {
+            name: 'Platinum',
+            number: 78,
+            symbol: 'Pt',
+            mass: 195.084
+        },
+        {
+            name: 'Gold',
+            number: 79,
+            symbol: 'Au',
+            mass: 196.967
+        },
+        {
+            name: 'Mercury',
+            number: 80,
+            symbol: 'Hg',
+            mass: 200.592
+        },
+        {
+            name: 'Thallium',
+            number: 81,
+            symbol: 'Tl',
+            mass: 204.38
+        },
+        {
+            name: 'Lead',
+            number: 82,
+            symbol: 'Pb',
+            mass: 207.2
+        },
+        {
+            name: 'Bismuth',
+            number: 83,
+            symbol: 'Bi',
+            mass: 208.980
+        },
+        {
+            name: 'Polonium',
+            number: 84,
+            symbol: 'Po',
+            mass: 209
+        },
+        {
+            name: 'Astatine',
+            number: 85,
+            symbol: 'At',
+            mass: 210
+        },
+        {
+            name: 'Radon',
+            number: 86,
+            symbol: 'Rn',
+            mass: 222
+        }
     ]
 };
 

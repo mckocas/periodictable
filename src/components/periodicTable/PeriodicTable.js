@@ -4,6 +4,7 @@ import P2 from '../period2/P2';
 import P3 from '../period3/P3';
 import P4 from '../period4/P4';
 import P5 from '../period5/P5';
+import P6 from '../period6/P6';
 import Elements from '../../Elements';
 import './PeriodicTable.css';
 
@@ -15,6 +16,7 @@ const PeriodicTable = (els) => {
             <P3 period={Elements.period3} />
             <P4 period={Elements.period4} />
             <P5 period={Elements.period5} />
+            <P6 period={Elements.period6} />
         </div>
     );
 }
