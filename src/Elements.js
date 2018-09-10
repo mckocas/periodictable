@@ -223,6 +223,116 @@ const Elements = {
             symbol: 'Kr',
             mass: 83.798
         }
+    ],
+    period5: [
+        {
+            name: 'Rubidium',
+            number: 37,
+            symbol: 'Rb',
+            mass: 85.468
+        },
+        {
+            name: 'Strontium',
+            number: 38,
+            symbol: 'Sr',
+            mass: 87.62
+        },
+        {
+            name: 'Yttrium',
+            number: 39,
+            symbol: 'Y',
+            mass: 88.906
+        },
+        {
+            name: 'Zirconium',
+            number: 40,
+            symbol: 'Zr',
+            mass: 91.224
+        },
+        {
+            name: 'Niobium',
+            number: 41,
+            symbol: 'Nb',
+            mass: 92.906
+        },
+        {
+            name: 'Molybdenum',
+            number: 42,
+            symbol: 'Mo',
+            mass: 95.95
+        },
+        {
+            name: 'Tachnetium',
+            number: 43,
+            symbol: 'Tc',
+            mass: 98
+        },
+        {
+            name: 'Ruthrenium',
+            number: 44,
+            symbol: 'Ru',
+            mass: 101.07
+        },
+        {
+            name: 'Rhodium',
+            number: 45,
+            symbol: 'Rh',
+            mass: 102.906
+        },
+        {
+            name: 'Palladium',
+            number: 46,
+            symbol: 'Pd',
+            mass: 106.42
+        },
+        {
+            name: 'Silver',
+            number: 47,
+            symbol: 'Ag',
+            mass: 107.868
+        },
+        {
+            name: 'Cadmium',
+            number: 48,
+            symbol: 'Cd',
+            mass: 112.414
+        },
+        {
+            name: 'Indium',
+            number: 49,
+            symbol: 'In',
+            mass: 114.818
+        },
+        {
+            name: 'Tin',
+            number: 50,
+            symbol: 'Sn',
+            mass: 118.710
+        },
+        {
+            name: 'Antimony',
+            number: 51,
+            symbol: 'Sb',
+            mass: 121.760
+        },
+        {
+            name: 'Tellerium',
+            number: 52,
+            symbol: 'Te',
+            mass: 127.60
+        },
+        {
+            name: 'Iodine',
+            number: 53,
+            symbol: 'I',
+            mass: 126.904
+        },
+        {
+            name: 'Xenon',
+            number: 54,
+            symbol: 'Xe',
+            mass: 131.292
+        }
     ]
 };
 
