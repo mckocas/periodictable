@@ -113,6 +113,116 @@ const Elements = {
             symbol: 'Ar',
             mass: 39.948
         }
+    ],
+    period4: [
+        {
+            name: 'Potassium',
+            number: 19,
+            symbol: 'K',
+            mass: 39.098
+        },
+        {
+            name: 'Calcium',
+            number: 20,
+            symbol: 'Ca',
+            mass: 40.078
+        },
+        {
+            name: 'Scandium',
+            number: 21,
+            symbol: 'Sc',
+            mass: 44.956
+        },
+        {
+            name: 'Titanium',
+            number: 22,
+            symbol: 'Ti',
+            mass: 47.867
+        },
+        {
+            name: 'Vanadium',
+            number:23,
+            symbol: 'V',
+            mass: 50.942
+        },
+        {
+            name: 'Chromium',
+            number: 24,
+            symbol: 'Cr',
+            mass: 51.996
+        },
+        {
+            name: 'Manganese',
+            number: 25,
+            symbol: 'Mn',
+            mass: 54.938
+        },
+        {
+            name: 'Iron',
+            number: 26,
+            symbol: 'Fe',
+            mass: 55.845
+        },
+        {
+            name: 'Cobalt',
+            number: 27,
+            symbol: 'Co',
+            mass: 58.933
+        },
+        {
+            name: 'Nickel',
+            number: 28,
+            symbol: 'Ni',
+            mass: 58.693
+        },
+        {
+            name: 'Copper',
+            number: 29,
+            symbol: 'Cu',
+            mass: 63.546
+        },
+        {
+            name: 'Zinc',
+            number: 30,
+            symbol: 'Zn',
+            mass: 65.38
+        },
+        {
+            name: 'Gallium',
+            number: 31,
+            symbol: 'Ga',
+            mass: 69.723
+        },
+        {
+            name: 'Germanium',
+            number: 32,
+            symbol: 'Ge',
+            mass: 72.630
+        },
+        {
+            name: 'Arsenic',
+            number: 33,
+            symbol: 'As',
+            mass: 74.922
+        },
+        {
+            name: 'Selenium',
+            number: 34,
+            symbol: 'Se',
+            mass: 78.971
+        },
+        {
+            name: 'Bromine',
+            number: 35,
+            symbol: 'Br',
+            mass: 79.904
+        },
+        {
+            name: 'Krypton',
+            number: 36,
+            symbol: 'Kr',
+            mass: 83.798
+        }
     ]
 };
 
