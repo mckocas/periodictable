@@ -443,6 +443,117 @@ const Elements = {
             symbol: 'Rn',
             mass: 222
         }
+    ],
+    period7: [
+        {
+            name: 'Francium',
+            number: 87,
+            symbol: 'Fr',
+            mass: 223
+        },
+        {
+            name: 'Radium',
+            number: 88,
+            symbol: 'Ra',
+            mass: 226
+        },
+        {
+            name: 'Actinium',
+            number: 89,
+            symbol: 'Ac',
+            mass: 227
+        },
+        {
+            name: 'Rutherfordium',
+            number: 104,
+            symbol: 'Rd',
+            mass: 267
+        },
+        {
+            name: 'Dubnium',
+            number: 105,
+            symbol: 'Db',
+            mass: 268
+        },
+        {
+            name: 'Seaborgium',
+            number: 106,
+            symbol: 'Sg',
+            mass: 269
+        },
+        {
+            name: 'Bohrium',
+            number: 107,
+            symbol: 'Bh',
+            mass: 270
+        },
+        {
+            name: 'Hassium',
+            number: 108,
+            symbol: 'Hs',
+            mass: 269
+        },
+        {
+            name: 'Meitnerium',
+            number: 109,
+            symbol: 'Mt',
+            mass: 278
+        },
+        {
+            name: 'Darmstadtium',
+            number: 110,
+            symbol: 'Ds',
+            mass: 281
+        },
+        {
+            name: 'Roentgenium',
+            number: 111,
+            symbol: 'Rg',
+            mass: 280
+        },
+        {
+            name: 'Copercinium',
+            number: 112,
+            symbol: 'Cn',
+            mass: 285
+        },
+        {
+            name : 'Nihonium',
+            number: 113,
+            symbol: 'Nh',
+            mass: 286
+        },
+        {
+            name: 'Flerovium',
+            number: 114,
+            symbol: 'Fl',
+            mass: 289
+        },
+        {
+            name: 'Moscovium',
+            number: 115,
+            symbol: 'Mc',
+            mass: 289
+        },
+        {
+            name: 'Livermorium',
+            number: 116,
+            symbol: 'Lv',
+            mass: 293
+        },
+        {
+            name: 'Tennessine',
+            number: 117,
+            symbol: 'Ts',
+            mass: 294    
+        },
+        {
+            name: 'Oganesson',
+            number: 118,
+            symbol: 'Og',
+            mass: 294
+        }
+
     ]
 };
 
