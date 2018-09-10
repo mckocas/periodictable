@@ -553,7 +553,178 @@ const Elements = {
             symbol: 'Og',
             mass: 294
         }
-
+    ],
+    lanthanides: [
+        {
+            name: 'Cerium',
+            number: 58,
+            symbol: 'Ce',
+            mass: 140.116
+        },
+        {
+            name: 'Paresodymium',
+            number: 59,
+            symbol: 'Pr',
+            mass: 140.908
+        },
+        {
+            name: 'Neodymium',
+            number: 60,
+            symbol: 'Nd',
+            mass: 144.242
+        },
+        {
+            name: 'Promethium',
+            number: 61,
+            symbol: 'Pm',
+            mass: 145
+        },
+        {
+            name: 'Samarium',
+            number: 62,
+            symbol: 'Sm',
+            mass: 150.36
+        },
+        {
+            name: 'Europium',
+            number: 63,
+            symbol: 'Eu',
+            mass: 151.964
+        },
+        {
+            name: 'Gadolinium',
+            number: 64,
+            symbol: 'Gd',
+            mass: 157.25
+        },
+        {
+            name: 'Terbium',
+            number: 65,
+            symbol: 'Tb',
+            mass: 158.925
+        },
+        {
+            name: 'Dysprosium',
+            number: 66,
+            symbol: 'Dy',
+            mass: 162.5
+        },
+        {
+            name: 'Holmium',
+            number: 67,
+            symbol: 'Ho',
+            mass: 164.930
+        },
+        {
+            name: 'Erbium',
+            number: 68,
+            symbol: 'Er',
+            mass: 167.259
+        },
+        {
+            name: 'Thulium',
+            number: 69,
+            symbol: 'Tm',
+            mass: 168.934
+        },
+        {
+            name: 'Ytterbium',
+            number: 70,
+            symbol: 'Yb',
+            mass: 173.045
+        },
+        {
+            name: 'Lutetium',
+            number: 71,
+            symbol: 'Lu',
+            mass: 174.967
+        }
+    ],
+    actinides: [
+        {
+            name: 'Thorium',
+            number: 90,
+            symbol: 'Th',
+            mass: 232.038
+        },
+        {
+            name: 'Protactinium',
+            number: 91,
+            symbol: 'Pa',
+            mass: 231.036
+        },
+        {
+            name: 'Uranium',
+            number: 92,
+            symbol: 'U',
+            mass: 238.029
+        },
+        {
+            name: 'Neptunium',
+            number: 93,
+            symbol: 'Np',
+            mass: 237
+        },
+        {
+            name: 'Plutonium',
+            number: 94,
+            symbol: 'Pu',
+            mass: 244
+        },
+        {
+            name: 'Americium',
+            number: 95,
+            symbol: 'Am',
+            mass: 243
+        },
+        {
+            name: 'Curium',
+            number: 96,
+            symbol: 'Cm',
+            mass: 247
+        },
+        {
+            name: 'Barkelium',
+            number: 97,
+            symbol: 'Bk',
+            mass: 247
+        },
+        {
+            name: 'Californium',
+            number: 98,
+            symbol: 'Cf',
+            mass: 251
+        },
+        {
+            name: 'Einsteinium',
+            number: 99,
+            symbol: 'Es',
+            mass: 252
+        },
+        {
+            name:  'Fermium',
+            number: 100,
+            symbol: 'Fm',
+            mass: 257
+        },
+        {
+            name: 'Mandelevium',
+            number: 101,
+            symbol: 'Md',
+            mass: 258
+        },
+        {
+            name: 'Nobelium',
+            number: 102,
+            symbol: 'No',
+            mass: 259
+        },
+        {
+            name: 'Lawrencium',
+            number: 103,
+            symbol: 'Lr',
+            mass: 262
+        }
     ]
 };
 

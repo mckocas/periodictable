@@ -6,6 +6,8 @@ import P4 from '../period4/P4';
 import P5 from '../period5/P5';
 import P6 from '../period6/P6';
 import P7 from '../period7/P7';
+import Lanthanides from '../lanthanides/Lanthanides';
+import Actinides from '../actinides/Actinides'
 import Elements from '../../Elements';
 import './PeriodicTable.css';
 
@@ -19,6 +21,8 @@ const PeriodicTable = (els) => {
             <P5 period={Elements.period5} />
             <P6 period={Elements.period6} />
             <P7 period={Elements.period7} />
+            <Lanthanides period={Elements.lanthanides} />
+            <Actinides period={Elements.actinides} />
         </div>
     );
 }

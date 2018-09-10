@@ -1,0 +1,8 @@
+.lanthanides{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    width: 910px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
