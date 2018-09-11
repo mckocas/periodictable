@@ -15,11 +15,12 @@ class El extends Component {
         const infoContainer = document.getElementsByClassName('infoContainer')[0];
         infoContainer.style.display = 'block';      
     }
+
     render(){
         return (
             <div>
                 <button onClick={this.setElement}>
-                <Tilt className='Tilt'  options = {{max:50}} style={{height: 55, width:55}}>
+                <Tilt className='Tilt'  options = {{max:50}} style={{height: 55, width:55, background:this.props.attr.background}}>
                 <div className='Tilt-inner'>
                     <span className='atomicNum'>{this.props.attr.number}</span>
                     <h3>{this.props.attr.symbol}</h3>
