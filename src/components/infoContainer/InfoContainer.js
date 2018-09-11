@@ -11,10 +11,28 @@ class InfoContainer extends Component{
             <div className='infoContainer'>
                 <div><button onClick={this.closeContainer} className='closeBt'>X</button></div>
                 <div>
-                    <h3>{this.props.name}</h3>
+                    <h3>{this.props.element.name}</h3>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere dictum arcu at semper. Aliquam finibus erat ullamcorper lorem laoreet vulputate. Maecenas ultrices pulvinar quam. Praesent congue hendrerit urna, ut aliquam justo feugiat vel. Fusce sed arcu vel erat luctus mattis vel sed odio. Pellentesque nulla leo, vehicula at purus tempus, egestas volutpat mauris. Phasellus efficitur vulputate erat aliquam vehicula. Donec ex diam, sollicitudin eget turpis non, mollis congue libero. Curabitur et molestie urna, quis bibendum nisl. Quisque eget lorem blandit, scelerisque risus in, aliquet lacus. Donec convallis tincidunt sollicitudin. Morbi lobortis aliquet viverra.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Number</th>
+                                <th>Mass</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{this.props.element.symbol}</td>
+                                <td>{this.props.element.number}</td>
+                                <td>{this.props.element.mass}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lectus nisi, lacinia non lorem quis, molestie maximus ex. Pellentesque sed laoreet turpis. Nulla nec arcu id arcu tempor iaculis. Proin tempor lacus nisi. Phasellus eu vestibulum tortor. Donec augue velit, hendrerit quis nibh id, tempor ullamcorper nisl. Sed pellentesque congue pharetra. Sed bibendum justo vitae dolor condimentum luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce venenatis turpis tristique, elementum odio nec, dignissim sapien. Vivamus faucibus ultricies ex, sit amet vestibulum massa ornare id. Etiam vitae tempor sem. In hac habitasse platea dictumst. Mauris eget hendrerit mi, non scelerisque enim. Nam ornare justo tellus, at rhoncus risus laoreet non.</p>
                 </div>
             </div>
         );

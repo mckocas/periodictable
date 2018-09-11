@@ -3,16 +3,16 @@ import El from '../element/El';
 import './P1.css';
 
 class P1 extends Component{
-    getElementName =(elName)=>{
-        if(this.props.getElementName){
-            this.props.getElementName(elName);
+    getElement =(el)=>{
+        if(this.props.getElement){
+            this.props.getElement(el);
         }      
     }
     render(){
         return(
             <div className='period1'>
-                <El attr = {this.props.period[0]}  getElementName={elName => this.getElementName(elName)}/>
-                <El attr = {this.props.period[1]}/>
+                <El attr = {this.props.period[0]} getElement={el => this.getElement(el)}/>
+                <El attr = {this.props.period[1]} getElement={el => this.getElement(el)}/>
             </div>
         );
     }

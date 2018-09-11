@@ -9,19 +9,18 @@ class App extends Component {
     super();
     this.state = {
       elements: Elements,
-      elementName: ''
+      element:{}
     }
   }
   
-  setElementName(elName){
-    this.setState({elementName: elName});
-    console.log(elName);
+  setElement(el){
+    this.setState({element: el});
   }
   render() {
     return (
       <div>
-        <InfoContainer name ={this.state.elementName}/>
-        <PeriodicTable Elements ={this.state.elements} setElementName={elName => this.setElementName(elName)}/>
+        <InfoContainer element={this.state.element} />
+        <PeriodicTable Elements ={this.state.elements} setElement={el => this.setElement(el)}/>
       </div>
     );
   }

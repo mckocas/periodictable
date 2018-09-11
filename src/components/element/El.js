@@ -4,9 +4,9 @@ import './El.css';
 
 
 class El extends Component {
-    setElementName = () =>{
-        if(this.props.getElementName){
-            this.props.getElementName(this.props.attr.name);
+    setElement = () =>{
+        if(this.props.getElement){
+            this.props.getElement(this.props.attr);
         }
         this.displayContainer();
     }
@@ -18,7 +18,7 @@ class El extends Component {
     render(){
         return (
             <div>
-                <button onClick={this.setElementName}>
+                <button onClick={this.setElement}>
                 <Tilt className='Tilt'  options = {{max:50}} style={{height: 55, width:55}}>
                 <div className='Tilt-inner'>
                     <span className='atomicNum'>{this.props.attr.number}</span>

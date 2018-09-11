@@ -11,23 +11,23 @@ import Actinides from '../actinides/Actinides'
 import './PeriodicTable.css';
 
 class PeriodicTable extends Component{
-    getElementName = elName => {
-        if(this.props.setElementName){
-            this.props.setElementName(elName)
+    getElement = el => {
+        if(this.props.setElement){
+            this.props.setElement(el)
         }
     }
     render(){
         return(
             <div className='periodicTable'>
-                <P1 period={this.props.Elements.period1}  getElementName = {elName => this.getElementName(elName)}/>
-                <P2 period={this.props.Elements.period2} />
-                <P3 period={this.props.Elements.period3} />
-                <P4 period={this.props.Elements.period4} />
-                <P5 period={this.props.Elements.period5} />
-                <P6 period={this.props.Elements.period6} />
-                <P7 period={this.props.Elements.period7} />
-                <Lanthanides period={this.props.Elements.lanthanides} />
-                <Actinides period={this.props.Elements.actinides} />
+                <P1 period={this.props.Elements.period1} getElement = {el => this.getElement(el)}/>
+                <P2 period={this.props.Elements.period2} getElement = {el => this.getElement(el)}/>
+                <P3 period={this.props.Elements.period3} getElement = {el => this.getElement(el)}/>
+                <P4 period={this.props.Elements.period4} getElement = {el => this.getElement(el)}/>
+                <P5 period={this.props.Elements.period5} getElement = {el => this.getElement(el)}/>
+                <P6 period={this.props.Elements.period6} getElement = {el => this.getElement(el)}/>
+                <P7 period={this.props.Elements.period7} getElement = {el => this.getElement(el)}/>
+                <Lanthanides period={this.props.Elements.lanthanides} getElement = {el => this.getElement(el)}/>
+                <Actinides period={this.props.Elements.actinides} getElement = {el => this.getElement(el)}/>
             </div>
         );
     }

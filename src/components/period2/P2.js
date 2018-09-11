@@ -3,20 +3,25 @@ import El from '../element/El';
 import './P2.css';
 
 class P2 extends Component{
+    getElement =(el)=>{
+        if(this.props.getElement){
+            this.props.getElement(el);
+        }      
+    }
     render(){
         return (
             <div className='period2'>
                 <div className='firstGroup'>
-                    <El attr = {this.props.period[0]}/>
-                    <El attr = {this.props.period[1]}/>
+                    <El attr = {this.props.period[0]} getElement={el => this.getElement(el)}/>
+                    <El attr = {this.props.period[1]} getElement={el => this.getElement(el)}/>
                 </div>
                 <div className='secondGroup'>
-                    <El attr = {this.props.period[2]}/>
-                    <El attr = {this.props.period[3]}/>
-                    <El attr = {this.props.period[4]}/>
-                    <El attr = {this.props.period[5]}/>
-                    <El attr = {this.props.period[6]}/>
-                    <El attr = {this.props.period[7]}/>
+                    <El attr = {this.props.period[2]} getElement={el => this.getElement(el)}/>
+                    <El attr = {this.props.period[3]} getElement={el => this.getElement(el)}/>
+                    <El attr = {this.props.period[4]} getElement={el => this.getElement(el)}/>
+                    <El attr = {this.props.period[5]} getElement={el => this.getElement(el)}/>
+                    <El attr = {this.props.period[6]} getElement={el => this.getElement(el)}/>
+                    <El attr = {this.props.period[7]} getElement={el => this.getElement(el)}/>
                 </div>
             </div>
         );        
