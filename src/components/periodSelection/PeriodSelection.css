@@ -1,0 +1,14 @@
+.periodSelection{
+    display:flex;
+    flex-wrap:nowrap;
+    width:300px;
+}
+.periodSelection button{
+    background-color: black;
+    color:white;
+    text-align:center;
+    padding: 4px;
+    height: 20px;
+    margin: 3px;
+    cursor:pointer;
+}
