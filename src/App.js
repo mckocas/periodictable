@@ -258,6 +258,25 @@ class App extends Component {
     this.colorizeBlockSelection(block);
   }
 
+  colorizeClassificationSelection(cf){
+    const periods = this.getPeriods();
+      for(let i = 0; i< periods.length; i++){
+        for(let k = 0; k < periods[i].length;k++){
+          let change = periods[i][k];
+          if(cf === change.classification){
+            console.log("tr")
+            continue;
+          }
+          change.background = 'black';
+          this.setState({change});
+      }
+    }
+  }
+  setClassificationSelection(cf){
+    this.clearSettings();
+    this.colorizeClassificationSelection(cf);
+  }
+
   render() {
     return (
       <div>
@@ -266,6 +285,7 @@ class App extends Component {
           setPeriodSelection = { period => this.setPeriodSelection(period)}
           setGroupSelection = {group => this.setGroupSelection(group)}
           setBlockSelection = {block => this.setBlockSelection(block)}
+          setClassificationSelection = { cf => this.setClassificationSelection(cf)}
         />
         <InfoContainer element={this.state.element} />
         <PeriodicTable Elements ={this.state.elements} setElement={el => this.setElement(el)}/>
