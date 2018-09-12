@@ -146,11 +146,63 @@ class App extends Component {
     this.colorizePeriodSelection(period);
   }
 
+  colorizeGroupSelection(group){
+    const periods = this.getPeriods();
+    let groupNumber = Number(group) - 1;
+    const gN = groupNumber;
+    let ln = -1;
+    let i = -1;
+    if(groupNumber === 0 || groupNumber === 17){
+      ln = 6;
+      i = 0;
+    }
+    else if(groupNumber === 1 || (groupNumber >= 12 && groupNumber <=16)){
+      ln = 6;
+      i = 1;
+    }
+    else if(groupNumber === 2){
+      ln = 4;
+      i = 3;
+    }else if(groupNumber >=3 && groupNumber <=11){
+      ln = 6;
+      i= 3;
+    }
+
+    for(let x = 0; x < periods.length; x++){
+      if(groupNumber >= 12 && groupNumber <=16){
+        groupNumber = gN - 10;
+      }
+      else if(groupNumber === 17){
+        groupNumber = gN - 16;
+      }
+      if(groupNumber === gN - 10 && x >= 3){
+        groupNumber = gN;
+      }
+      else if(groupNumber === gN - 16 && (x >= 1 && x<=2)){
+        groupNumber = 7;
+      }
+      else if(groupNumber === gN - 16 && x>=3){
+        groupNumber = gN;
+      }
+      for(let y = 0; y < periods[x].length; y++){
+        if((x >= i && x <= ln) && (y === groupNumber)){
+          continue;
+        }
+        let change = periods[x][y];
+        change.background = "black";
+        this.setState({change});
+      }
+    }
+  }
+  setGroupSelection(group){
+    this.clearSettings();
+    this.colorizeGroupSelection(group);
+  }
   render() {
     return (
       <div>
         <button onClick={this.demoMethod}>Click ME!!!!!</button>
-        <ClassificationContainer setPeriodSelection = { period => this.setPeriodSelection(period)}/>
+        <ClassificationContainer setPeriodSelection = { period => this.setPeriodSelection(period)} setGroupSelection = {group => this.setGroupSelection(group)} />
         <InfoContainer element={this.state.element} />
         <PeriodicTable Elements ={this.state.elements} setElement={el => this.setElement(el)}/>
       </div>
