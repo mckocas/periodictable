@@ -140,7 +140,6 @@ class App extends Component {
         periods[8].shift(actinium);
       }
   }
-
   setPeriodSelection(period){
     this.clearSettings();
     this.colorizePeriodSelection(period);
@@ -198,11 +197,76 @@ class App extends Component {
     this.clearSettings();
     this.colorizeGroupSelection(group);
   }
+
+  colorizeBlockSelection(block){
+    const periods = this.getPeriods();
+    console.log(block);
+    if(block === 's'){
+      for(let i = 1; i< periods.length; i++){
+       for(let k = 0; k < periods[i].length; k++){
+        if(k < 2 && i < 7){
+          continue
+        }
+        let change = periods[i][k];
+        change.background = 'black';
+        this.setState({change});
+       } 
+      }
+    }
+    else if(block === 'p'){
+      for(let i = 0; i < periods.length; i++){
+        for(let k = 0; k < periods[i].length; k++){
+          if(i > 0 && i < 7){
+            if(i<3 && k>1){
+              continue;
+            }
+            else if(i>2 && k >11){
+              continue;
+            }
+          }
+          let change = periods[i][k];
+          change.background = 'black';
+          this.setState({change});
+        }
+      }
+    }
+    else if(block === 'd'){
+      for(let i = 0; i< periods.length; i++){
+        for(let k = 0; k < periods[i].length; k++){
+          if((i>2 && i < 7) && (k>1 && k<12)){
+            continue;
+          }
+          let change = periods[i][k];
+          change.background = 'black';
+          this.setState({change});
+        }
+      }
+    }
+    else if(block === 'f'){
+      for(let i = 0; i< 7; i++){
+        for(let k = 0; k < periods[i].length; k++){
+          let change = periods[i][k];
+          change.background = 'black';
+          this.setState({change});
+        }
+      }      
+    }
+
+  }
+  setBlockSelection(block){
+    this.clearSettings();
+    this.colorizeBlockSelection(block);
+  }
+
   render() {
     return (
       <div>
         <button onClick={this.demoMethod}>Click ME!!!!!</button>
-        <ClassificationContainer setPeriodSelection = { period => this.setPeriodSelection(period)} setGroupSelection = {group => this.setGroupSelection(group)} />
+        <ClassificationContainer
+          setPeriodSelection = { period => this.setPeriodSelection(period)}
+          setGroupSelection = {group => this.setGroupSelection(group)}
+          setBlockSelection = {block => this.setBlockSelection(block)}
+        />
         <InfoContainer element={this.state.element} />
         <PeriodicTable Elements ={this.state.elements} setElement={el => this.setElement(el)}/>
       </div>
