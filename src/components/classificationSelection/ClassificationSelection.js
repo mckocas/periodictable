@@ -10,10 +10,17 @@ class ClassificationSelection extends Component{
     render(){
         return(
             <div className='classificationSelection'>
-                <button onClick={() => this.getClassificationSelection('Metal')}>Metal</button>
-                <button onClick={() => this.getClassificationSelection('Non-metal')}>Non-metal</button>
-                <button onClick={() => this.getClassificationSelection('Metalloid')}>Metalloid</button>
-                <button onClick={() => this.getClassificationSelection('Unknown')}>Unknown</button>
+                <div className= 'optionName'>
+                    <h5>Classification</h5>
+                </div>
+
+                <div className= 'classificationbuttons'>
+                    <br/>
+                    <button onClick={() => this.getClassificationSelection('Metal')}>Metal</button>
+                    <button onClick={() => this.getClassificationSelection('Non-metal')}>Non-metal</button>
+                    <button onClick={() => this.getClassificationSelection('Metalloid')}>Metalloid</button>
+                    <button onClick={() => this.getClassificationSelection('Unknown')}>Unknown</button>
+                </div>
             </div>
         );
     }

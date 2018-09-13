@@ -294,7 +294,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.demoMethod}>Click ME!!!!!</button>
+        <button onClick={this.demoMethod}>TryDemoMethod</button>
         <ClassificationContainer
           setPeriodSelection = { period => this.setPeriodSelection(period)}
           setGroupSelection = {group => this.setGroupSelection(group)}

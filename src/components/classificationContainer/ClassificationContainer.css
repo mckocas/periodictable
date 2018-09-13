@@ -12,10 +12,10 @@
     height: 20px;
 }
 .clearButton button{
-    background-color: black;
+    background-color: #FB454F;
     color:white;
     text-align:center;
-    padding: 4px;
+    padding: 5px;
     cursor:pointer;
 }
 .group1{
