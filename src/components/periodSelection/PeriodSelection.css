@@ -1,7 +1,7 @@
 .periodSelection{
     display:flex;
     flex-wrap:nowrap;
-    width:300px;
+    width:400px;
 }
 .periodSelection button{
     background-color: black;
@@ -11,4 +11,14 @@
     height: 20px;
     margin: 3px;
     cursor:pointer;
+}
+.optionName{
+    position: relative;
+}
+.optionName h5{
+    position:absolute;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 10px;
+    width: 100px;
 }

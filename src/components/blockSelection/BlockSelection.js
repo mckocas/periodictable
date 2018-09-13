@@ -12,11 +12,16 @@ class BlockSelection extends Component {
     render(){
         return (
             <div className='blockSelection'>
+                <div className = 'optionName'><h5>Blocks</h5></div>
 
-                <button onClick={() => this.getBlockSelection('s')}>s</button>
-                <button onClick={() => this.getBlockSelection('p')}>p</button>
-                <button onClick={() => this.getBlockSelection('d')}>d</button>
-                <button onClick={() => this.getBlockSelection('f')}>f</button>
+                <div className = 'blockButtons'>
+                    <br/>
+                    <button onClick={() => this.getBlockSelection('s')}>s</button>
+                    <button onClick={() => this.getBlockSelection('p')}>p</button>
+                    <button onClick={() => this.getBlockSelection('d')}>d</button>
+                    <button onClick={() => this.getBlockSelection('f')}>f</button>
+                </div>
+                
                 
             </div>
         );

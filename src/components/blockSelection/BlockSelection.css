@@ -12,3 +12,13 @@
     margin: 3px;
     cursor:pointer;
 }
+.optionName{
+    position: relative;
+}
+.optionName h5{
+    position:absolute;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 10px;
+    width: 100px;
+}

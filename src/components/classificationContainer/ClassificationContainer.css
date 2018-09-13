@@ -6,3 +6,22 @@
     padding: 15px;
     border: 1px solid #e0e0e0;
 }
+.clearButton{
+    width: 98px;
+    margin:5px auto;
+    height: 20px;
+}
+.clearButton button{
+    background-color: black;
+    color:white;
+    text-align:center;
+    padding: 4px;
+    cursor:pointer;
+}
+.group1{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}

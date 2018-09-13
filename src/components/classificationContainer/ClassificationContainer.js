@@ -27,12 +27,22 @@ class ClassificationContainer extends Component{
             this.props.setClassificationSelection(cf);
         }
     }
+    clearSettings(){
+        if(this.props.clearSettings){
+            this.props.clearSettings();
+        }
+    }
     render(){
         return(
             <div className='classificationContainer'>
-                <PeriodSelection getPeriodSelection = {period => this.getPeriodSelection(period)} />
-                <GroupSelection getGroupSelection = {group => this.getGroupSelection(group)} />
-                <BlockSelection getBlockSelection = {block => this.getBlockSelection(block)} />
+                <div className='clearButton'>
+                    <button onClick= { () => this.clearSettings()}>Clear Settings</button>
+                </div>
+                <div className='group1'>
+                    <PeriodSelection getPeriodSelection = {period => this.getPeriodSelection(period)} />
+                    <GroupSelection getGroupSelection = {group => this.getGroupSelection(group)} />
+                    <BlockSelection getBlockSelection = {block => this.getBlockSelection(block)} />
+                </div>
                 <ClassificationSelection getClassificationSelection = {cf => this.getClassificationSelection(cf)} />
             </div>
         )

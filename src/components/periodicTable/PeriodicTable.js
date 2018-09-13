@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import DescriptionContainer from '../descriptionContainer/DescriptionContainer';
 import P1 from '../period1/P1';
 import P2 from '../period2/P2';
 import P3 from '../period3/P3';
@@ -19,6 +20,7 @@ class PeriodicTable extends Component{
     render(){
         return(
             <div className='periodicTable'>
+                <DescriptionContainer option ={this.props.option}/>
                 <P1 period={this.props.Elements.period1} getElement = {el => this.getElement(el)}/>
                 <P2 period={this.props.Elements.period2} getElement = {el => this.getElement(el)}/>
                 <P3 period={this.props.Elements.period3} getElement = {el => this.getElement(el)}/>

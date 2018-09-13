@@ -12,6 +12,7 @@ class App extends Component {
       elements: Elements,
       element:{},
       colors: [],
+      selectedOption: 'Periodic Table'
     }
   }
 
@@ -20,7 +21,7 @@ class App extends Component {
   }
 
   demoMethod = () => {
-    this.clearSettings();
+    
   }
 
   setElement(el){
@@ -55,6 +56,7 @@ class App extends Component {
   clearSettings(){
       const periods = this.getPeriods();
       const colors = this.state.colors;
+      this.setState({selectedOption: 'Periodic Table'})
       let i = 0;
       periods.forEach((prd) =>{
         prd.forEach((elm) =>{
@@ -141,7 +143,17 @@ class App extends Component {
       }
   }
   setPeriodSelection(period){
+    console.log(period)
     this.clearSettings();
+    let option = '';
+    if(period <= 7){
+      option = 'Period ' + period;
+    }else if(period === 'lanthanides'){
+      option = 'Lanthanides';
+    }else if(period === 'actinides'){
+      option = 'Actinides'
+    }
+    this.setState({selectedOption: option });
     this.colorizePeriodSelection(period);
   }
 
@@ -195,6 +207,7 @@ class App extends Component {
   }
   setGroupSelection(group){
     this.clearSettings();
+    this.setState({selectedOption: 'Group ' + group});
     this.colorizeGroupSelection(group);
   }
 
@@ -255,6 +268,7 @@ class App extends Component {
   }
   setBlockSelection(block){
     this.clearSettings();
+    this.setState({selectedOption: block + ' Block'});
     this.colorizeBlockSelection(block);
   }
 
@@ -264,7 +278,6 @@ class App extends Component {
         for(let k = 0; k < periods[i].length;k++){
           let change = periods[i][k];
           if(cf === change.classification){
-            console.log("tr")
             continue;
           }
           change.background = 'black';
@@ -274,6 +287,7 @@ class App extends Component {
   }
   setClassificationSelection(cf){
     this.clearSettings();
+    this.setState({selectedOption: cf});
     this.colorizeClassificationSelection(cf);
   }
 
@@ -286,9 +300,14 @@ class App extends Component {
           setGroupSelection = {group => this.setGroupSelection(group)}
           setBlockSelection = {block => this.setBlockSelection(block)}
           setClassificationSelection = { cf => this.setClassificationSelection(cf)}
+          clearSettings = { () => this.clearSettings()}
         />
         <InfoContainer element={this.state.element} />
-        <PeriodicTable Elements ={this.state.elements} setElement={el => this.setElement(el)}/>
+        <PeriodicTable 
+          Elements ={this.state.elements} 
+          setElement={el => this.setElement(el)}
+          option={this.state.selectedOption}  
+          />
       </div>
     );
   }
