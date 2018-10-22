@@ -20,7 +20,7 @@ class PeriodicTable extends Component{
     render(){
         return(
             <div className='periodicTable'>
-                <DescriptionContainer option ={this.props.option}/>
+                <DescriptionContainer option ={this.props.option} optionDesc={this.props.optionDesc}/>
                 <P1 period={this.props.Elements.period1} getElement = {el => this.getElement(el)}/>
                 <P2 period={this.props.Elements.period2} getElement = {el => this.getElement(el)}/>
                 <P3 period={this.props.Elements.period3} getElement = {el => this.getElement(el)}/>

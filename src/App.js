@@ -3,6 +3,7 @@ import PeriodicTable from './components/periodicTable/PeriodicTable';
 import InfoContainer from './components/infoContainer/InfoContainer';
 import ClassificationContainer from './components/classificationContainer/ClassificationContainer';
 import Elements from './Elements';
+import Descriptions from './Descriptions';
 import './App.css';
 
 class App extends Component {
@@ -10,9 +11,11 @@ class App extends Component {
     super();
     this.state = {
       elements: Elements,
+      descriptions: Descriptions,
       element:{},
       colors: [],
-      selectedOption: 'Periodic Table'
+      selectedOption: 'Periodic Table',
+      selectedOptionDesc: 'Interactive periodic table. Click the tabs at the top to explore elements. Click the elements for more information.'
     }
   }
 
@@ -21,6 +24,7 @@ class App extends Component {
   }
 
   demoMethod = () => {
+    console.log(this.state.descriptions.groups[0].desc)
   }
 
   setElement(el){
@@ -55,7 +59,8 @@ class App extends Component {
   clearSettings(){
       const periods = this.getPeriods();
       const colors = this.state.colors;
-      this.setState({selectedOption: 'Periodic Table'})
+      this.setState({selectedOption: 'Periodic Table'});
+      this.setState({selectedOptionDesc: this.state.descriptions.periodictable[0].desc})
       let i = 0;
       periods.forEach((prd) =>{
         prd.forEach((elm) =>{
@@ -142,17 +147,21 @@ class App extends Component {
       }
   }
   setPeriodSelection(period){
-    console.log(period)
     this.clearSettings();
     let option = '';
+    let num = -1;
     if(period <= 7){
       option = 'Period ' + period;
+      num = period - 1;
     }else if(period === 'lanthanides'){
       option = 'Lanthanides';
+      num = 7;
     }else if(period === 'actinides'){
       option = 'Actinides'
+      num = 8;
     }
     this.setState({selectedOption: option });
+    this.setState({selectedOptionDesc: this.state.descriptions.periods[num].desc })
     this.colorizePeriodSelection(period);
   }
 
@@ -207,6 +216,7 @@ class App extends Component {
   setGroupSelection(group){
     this.clearSettings();
     this.setState({selectedOption: 'Group ' + group});
+    this.setState({selectedOptionDesc: this.state.descriptions.groups[group - 1].desc});
     this.colorizeGroupSelection(group);
   }
 
@@ -266,8 +276,19 @@ class App extends Component {
 
   }
   setBlockSelection(block){
+    let num = -1;
+    if(block === 's'){
+      num = 0;
+    }else if(block === 'p'){
+      num = 1;
+    }else if(block === 'd'){
+      num = 2;
+    }else if(block === 'f'){
+      num = 3;
+    }
     this.clearSettings();
     this.setState({selectedOption: block + ' Block'});
+    this.setState({selectedOptionDesc: this.state.descriptions.blocks[num].desc});
     this.colorizeBlockSelection(block);
   }
 
@@ -286,7 +307,18 @@ class App extends Component {
   }
   setClassificationSelection(cf){
     this.clearSettings();
+    let num = -1;
+    if(cf === 'Metal'){
+      num = 0;
+    }else if(cf === 'Non-metal'){
+      num = 1;
+    }else if(cf === 'Metalloid'){
+      num = 2;
+    }else if(cf === 'Unknown'){
+      num = 3;
+    }
     this.setState({selectedOption: cf});
+    this.setState({selectedOptionDesc: this.state.descriptions.classifications[num].desc})
     this.colorizeClassificationSelection(cf);
   }
 
@@ -305,7 +337,8 @@ class App extends Component {
         <PeriodicTable 
           Elements ={this.state.elements} 
           setElement={el => this.setElement(el)}
-          option={this.state.selectedOption}  
+          option={this.state.selectedOption}
+          optionDesc = {this.state.selectedOptionDesc}  
           />
       </div>
     );
