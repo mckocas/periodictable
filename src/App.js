@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   demoMethod = () => {
-    console.log(this.state.descriptions.groups[0].desc)
+    this.state.elements.period1.map((el) => console.log(el));
   }
 
   setElement(el){

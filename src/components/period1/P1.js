@@ -11,8 +11,7 @@ class P1 extends Component{
     render(){
         return(
             <div className='period1'>
-                <El attr = {this.props.period[0]} getElement={el => this.getElement(el)}/>
-                <El attr = {this.props.period[1]} getElement={el => this.getElement(el)}/>
+                {this.props.period.map((i)=>{ return <El key={i.number} attr = {i} getElement={el=>this.getElement(el)}/>})}
             </div>
         );
     }

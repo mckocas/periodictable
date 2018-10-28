@@ -11,22 +11,7 @@ class Actinides extends Component{
     render(){
         return (
             <div className='actinides'>
-    
-                    <El attr = {this.props.period[0]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[1]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[2]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[3]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[4]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[5]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[6]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[7]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[8]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[9]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[10]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[11]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[12]} getElement={el => this.getElement(el)}/>
-                    <El attr = {this.props.period[13]} getElement={el => this.getElement(el)}/>  
-    
+                {this.props.period.map((i)=>{ return <El key={i.number} attr = {i} getElement={el=>this.getElement(el)}/>})} 
             </div>
         );        
     }
